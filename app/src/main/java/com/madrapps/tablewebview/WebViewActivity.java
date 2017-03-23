@@ -19,7 +19,11 @@ public class WebViewActivity extends AppCompatActivity {
 
         final WebView webView = (WebView) findViewById(R.id.webView);
         webView.getSettings().setJavaScriptEnabled(true);
+        webView.getSettings().setBuiltInZoomControls(true);
+        webView.getSettings().setSupportZoom(true);
+        webView.getSettings().setDisplayZoomControls(false);
         webView.setWebViewClient(new WebViewClient());
         webView.loadUrl("file:///android_asset/tables/table3.html");
+
     }
 }

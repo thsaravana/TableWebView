@@ -8,15 +8,21 @@
     <script type="text/javascript">
             $(document).ready(function() {
     $('#main_table').DataTable({
+        dom: 'Bfrtip',
+        buttons: [
+            'columnsToggle'
+        ],
+        paging: false,
         info: false,
-        paging: false
+        scrollX: true,
+        fixedColumns: true
     });
 });
 
     </script>
 </head>
 <body>
-<table id="main_table" class="ui celled table" cellspacing="0" width="100%">
+<table id="main_table" class="display" cellspacing="0" width="100%">
     <thead>
     <tr>
         <th>Name</th>
